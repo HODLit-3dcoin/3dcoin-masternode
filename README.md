@@ -51,6 +51,13 @@ here is a concrete example:
 
     docker run -d --name hodlit-masternode -p 6695:6695 hodlitio/3dcoin-masternode 127.0.0.1 5P1xqTgJMtXwEEeE3TgJHYn26fWz8UkqN1cUmt2345qUdSaEtH4
 
+## I would like to upgrade from a previous version, how?
+Just change the ip address and masternode private key at the command below:
+
+    sudo docker stop masternode || true && sudo docker rm masternode || true && sudo docker rmi hodlitio/3dcoin-masternode || true && sudo docker run -d --restart always --name masternode -p 6695:6695 hodlitio/3dcoin-masternode 127.0.0.1 5P1xqTgJMtXwEEeE3TgJHYn26fWz8UkqN1cUmt2345qUdSaEtH4 && sudo docker logs -f masternode
+
+In future, when blockchain size becomes larger, we will make use of volumes. For now, it takes only minutes to start it, so bear with us :)
+
 ## I would like to support HODLit.io team
 Thanks! You can support us by registering to [Digital Ocean](https://www.digitalocean.com/?refcode=fc06220e24cc) with our referral link or donating to addresses below:
 
