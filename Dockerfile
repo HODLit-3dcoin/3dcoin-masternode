@@ -5,11 +5,11 @@ ARG BUILD_DATE
 ARG VCS_REF
 ARG VERSION
 LABEL org.label-schema.build-date=$BUILD_DATE \
-			org.label-schema.name="HODLit 3DCoin Miner" \
-			org.label-schema.description="Solo CPU mining for 3DCoin" \
+			org.label-schema.name="HODLit 3DCoin Masternode" \
+			org.label-schema.description="Masternode for 3DCoin" \
 			org.label-schema.url="hodlit.io" \
 			org.label-schema.vcs-ref=$VCS_REF \
-			org.label-schema.vcs-url="https://github.com/HODLit-3dcoin/3dcoin-miner" \
+			org.label-schema.vcs-url="https://github.com/HODLit-3dcoin/3dcoin-masternode" \
 			org.label-schema.vendor="Varts" \
 			org.label-schema.version=$VERSION \
 			org.label-schema.schema-version="1.0"
